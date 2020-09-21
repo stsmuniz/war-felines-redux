@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="CastleDefenseV2"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=256
+window/size/height=240
+window/size/test_width=512
+window/size/test_height=480
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[input]
+
+spawn_enemy_1={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":49,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[layer_names]
+
+2d_physics/layer_1="Blue"
+2d_physics/layer_2="Red"
+2d_physics/layer_3="BlueHitbox"
+2d_physics/layer_4="RedHitbox"
+2d_physics/layer_5="BlueHurtbox"
+2d_physics/layer_6="RedHurtbox"
+2d_physics/layer_7="world"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
